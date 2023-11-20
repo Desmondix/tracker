@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIL "Ceccano Ironmon League" Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">CIL "Ceccano Ironmon League" Tracker</div>
+    <div id="scoreContainer">
+        <button onclick="adjustScore(-5)">-5 punti</button>
+        <div id="counter">Punti: <span id="points">0</span> | Tentativo: <span id="tryCount">1</span></div>
+        <button onclick="adjustScore(5)">+5 punti</button>
+      
+    
+        <div id="faticheContainer">
+            <button id="faticheButton">Le fatiche</button>
+            <div id="faticheContent">
+                <button onclick="adjustScore(100)">Fatica di alback (+100)</button>
+                <button onclick="adjustScore(20)">Fatica 2</button>
+                <button onclick="adjustScore(15)">Fatica 3</button>
+                <!-- Aggiungi altri pulsanti per le fatiche secondo necessità -->
+            </div>
+        </div>
+
+    </div>
+     
+  
+    <div id="eventContainer"></div>
+    <div id="map"></div>
+    <script src="app.js"></script>
+    <div id="overlay"></div>
+</body>
+</html>
