@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+#title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff80b3; /* Rosa acceso, colore comune negli anni '80 */
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra del testo */
+}
+
+#scoreContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+}
+
+#scoreRectangle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Nero trasparente per lo stile retro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#counter {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black; /* Giallo acceso */
+}
+#points {
+    font-size: 40px !important; /* Puoi impostare la dimensione desiderata in pixel o in un'altra unità di misura */
+    font-weight: bold !important; /* Sovrascrivi il font-weight se necessario */
+    color: red !important; /* Sovrascrivi il colore se necessario */
+}
+#tryCount {
+    font-size: 40px !important; /* Puoi impostare la dimensione desiderata in pixel o in un'altra unità di misura */
+    font-weight: bold !important; /* Sovrascrivi il font-weight se necessario */
+    color: red !important; /* Sovrascrivi il colore se necessario */
+}
+
+button {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    margin: 10px;
+    border: 2px solid #ffcc00; /* Giallo acceso */
+    background-color: rgba(0, 0, 0, 0.5); /* Nero trasparente per lo stile retro */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Cambia il colore al passaggio del mouse */
+    color: #000;
+}
+
+#newTryButton {
+    width: 300px;
+    background-color: #ff6666; /* Rosso acceso */
+}
+
+#tryCount {
+    margin-top: 20px;
+    color: #ffcc00; /* Giallo acceso */
+}
+
+/* Rimuovi il margine dal corpo del documento */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+#title {
+    font-size: 72px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+#faticheContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#faticheContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+#faticheContainer:hover #faticheContent {
+    display: block;
+}
